@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-ivory font-body text-ink; }
+html { scroll-behavior: smooth; }
+
+/* Tombol emas: dipakai di banyak tempat, jadi dibuat sekali di sini */
+.tombol-emas {
+  background: linear-gradient(110deg, #A87820 0%, #D3A443 28%, #F3DEA2 52%, #D8AB4D 76%, #A87820 100%);
+  @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl px-6 text-sm font-bold text-forest-950 shadow-md transition hover:brightness-105;
+}
+.tombol-putih {
+  @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-warm px-6 text-sm font-bold text-forest-950 transition hover:bg-white;
+}
+.kartu {
+  @apply rounded-2xl border border-garis bg-warm shadow-[0_8px_24px_rgba(20,35,24,0.08)];
+}
